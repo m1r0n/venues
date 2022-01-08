@@ -1,0 +1,24 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@venues/api": ["libs/api/src/index.ts"],
+      "@venues/http-common": ["libs/http-common/src/index.ts"],
+      "@venues/venues": ["libs/venues/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

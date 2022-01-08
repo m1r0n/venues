@@ -1,0 +1,16 @@
+<mat-grid-list cols="5" rowHeight="1:1">
+  <mat-grid-tile *ngFor="let venue of (venues$ | async)">
+    <venues-venue
+      [name]="venue.name"
+      [description]="venue.description"
+      [photoUrl]="venue.photoUrl">
+    </venues-venue>
+  </mat-grid-tile>
+</mat-grid-list>
+<venues-loading-bar *ngIf="loading$ | async"></venues-loading-bar>
+<button *ngIf="cursor"
+        (click)="loadMore()"
+        mat-stroked-button
+        color="primary">
+  Load more venues
+</button>

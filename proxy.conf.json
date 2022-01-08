@@ -1,0 +1,11 @@
+{
+  "/proxy/burger-venue/api/*": {
+    "target": "http://localhost:8080",
+    "pathRewrite": {
+      "^/proxy": ""
+    },
+    "secure": false,
+    "loglevel": "debug",
+    "changeOrigin": true
+  }
+}

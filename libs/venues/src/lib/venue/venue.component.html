@@ -1,0 +1,14 @@
+<mat-card class="example-card">
+  <div *ngIf="photoUrl;else default_image">
+    <img class="venue-photo" mat-card-image src="{{photoUrl}}" alt="Cannot retrieve image from url">
+  </div>
+  <mat-card-content>
+    <p>
+      {{name}} {{description}}
+    </p>
+  </mat-card-content>
+</mat-card>
+
+<ng-template #default_image>
+  <img class="venue-photo" mat-card-image src="https://i.postimg.cc/85rzWYB1/no-burger-found.jpg" alt="Default image not loaded">
+</ng-template>
