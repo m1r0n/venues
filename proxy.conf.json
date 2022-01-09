@@ -1,6 +1,6 @@
 {
   "/proxy/burger-venue/api/*": {
-    "target": "http://localhost:8080",
+    "target": "https://burger-venue.herokuapp.com",
     "pathRewrite": {
       "^/proxy": ""
     },
